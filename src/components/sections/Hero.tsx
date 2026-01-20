@@ -22,7 +22,7 @@ const Hero = () => {
           className="mb-6"
         >
           <span className="inline-block px-4 py-2 rounded-full glass text-primary font-mono text-sm mb-6">
-            Welcome to my portfolio
+            Welcome to my Portfolio
           </span>
         </motion.div>
 
@@ -69,10 +69,18 @@ const Hero = () => {
             View Projects
             <ArrowDown className="ml-2 h-4 w-4" />
           </Button>
-          <Button variant="outline" size="lg">
-            <Download className="mr-2 h-4 w-4" />
-            Download Resume
-          </Button>
+          <a
+            href="/resume/Praveen_Resume.pdf"
+            download
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <Button variant="outline" size="lg">
+              <Download className="mr-2 h-4 w-4" />
+              Download Resume
+            </Button>
+          </a>
+
         </motion.div>
 
         <motion.div
@@ -82,26 +90,26 @@ const Hero = () => {
           className="flex items-center justify-center gap-6"
         >
           <a
-            href="https://github.com"
+            href="https://github.com/Praveen007-m"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors duration-300"
+            className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110"
             aria-label="GitHub"
           >
             <Github className="h-6 w-6" />
           </a>
           <a
-            href="https://linkedin.com"
+            href="https://www.linkedin.com/in/praveen-kumar-s-25704b259/"
             target="_blank"
             rel="noopener noreferrer"
-            className="text-muted-foreground hover:text-primary transition-colors duration-300"
+            className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110"
             aria-label="LinkedIn"
           >
             <Linkedin className="h-6 w-6" />
           </a>
           <a
-            href="mailto:praveenkumar@email.com"
-            className="text-muted-foreground hover:text-primary transition-colors duration-300"
+            href="mailto:praveensk3737@gmail.com"
+            className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110"
             aria-label="Email"
           >
             <Mail className="h-6 w-6" />

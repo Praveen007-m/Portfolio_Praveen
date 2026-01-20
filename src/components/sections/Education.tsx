@@ -16,7 +16,7 @@ const Education = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm mb-4 block">05. Education</span>
+          <span className="text-primary font-mono text-sm mb-4 block">Education</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Academic Background</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>

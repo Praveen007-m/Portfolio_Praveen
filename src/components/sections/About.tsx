@@ -39,7 +39,7 @@ const About = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm mb-4 block">01. About Me</span>
+          <span className="text-primary font-mono text-sm mb-4 block">About Me</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get to know me</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
@@ -58,7 +58,7 @@ const About = () => {
                 My journey into programming started with curiosity about how applications work, and it has evolved into a deep passion for creating elegant, efficient solutions to real-world problems.
               </p>
               <p className="text-lg leading-relaxed">
-                I specialize in building responsive web applications using modern technologies like React JS, Spring Boot, and Django. I'm constantly learning and staying updated with the latest industry trends to deliver cutting-edge solutions.
+                I specialize in building responsive web applications using modern technologies like React JS, Spring Boot, and Node JS. I'm constantly learning and staying updated with the latest industry trends to deliver cutting-edge solutions.
               </p>
               <p className="text-lg leading-relaxed">
                 When I'm not coding, you'll find me exploring new technologies, contributing to open-source projects, or working on personal projects that challenge my skills and creativity.

@@ -26,17 +26,17 @@ const Skills = () => {
     {
       title: "Backend",
       skills: [
-        { name: "Spring Boot", level: 80 },
-        { name: "Node.js", level: 75 },
+        { name: "Spring Boot", level: 75 },
+        { name: "Node.js", level: 80 },
       ],
     },
     {
       title: "Database & Tools",
       skills: [
-        { name: "MySQL", level: 85 },
-        { name: "SQLite", level: 80 },
+        { name: "MySQL", level: 90 },
+        { name: "SQLite", level: 90 },
         { name: "Git", level: 85 },
-        { name: "VS Code", level: 90 },
+        { name: "VS Code", level: 95 },
       ],
     },
   ];
@@ -50,7 +50,7 @@ const Skills = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm mb-4 block">02. Skills</span>
+          <span className="text-primary font-mono text-sm mb-4 block">Skills</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Technical Expertise</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>

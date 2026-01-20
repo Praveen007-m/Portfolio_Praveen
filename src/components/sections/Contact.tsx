@@ -65,19 +65,19 @@ const Contact = () => {
       icon: Mail,
       label: "Email",
       value: "praveenkumar@email.com",
-      href: "mailto:praveenkumar@email.com",
+      href: "mailto:praveensk3737@gmail.com",
     },
     {
       icon: Github,
       label: "GitHub",
       value: "github.com/praveenkumar",
-      href: "https://github.com",
+      href: "https://github.com/Praveen007-m",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
       value: "linkedin.com/in/praveenkumar",
-      href: "https://linkedin.com",
+      href: "https://www.linkedin.com/in/praveen-kumar-s-25704b259/",
     },
   ];
 
@@ -90,7 +90,7 @@ const Contact = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm mb-4 block">06. Contact</span>
+          <span className="text-primary font-mono text-sm mb-4 block">Contact</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Get In Touch</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full mb-6" />
           <p className="text-muted-foreground max-w-xl mx-auto">

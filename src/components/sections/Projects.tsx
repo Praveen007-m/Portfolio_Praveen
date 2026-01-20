@@ -13,7 +13,7 @@ const Projects = () => {
       description:
         "A comprehensive Point of Sale system for hotels featuring billing management, GST calculation, role-based access control, and automated invoice PDF generation. Built with a focus on efficiency and user experience.",
       technologies: ["React", "Node.js", "SQLite"],
-      github: "#",
+      github: "https://github.com/Praveen007-m/Hotel-POS",
       demo: "#",
       featured: true,
     },
@@ -22,7 +22,7 @@ const Projects = () => {
       description:
         "An ML-based prediction system that analyzes seismic data to forecast earthquakes. Features interactive maps for visualization and real-time data processing capabilities.",
       technologies: ["Python", "Machine Learning", "Django", "Maps API"],
-      github: "#",
+      github: "https://github.com/Praveen007-m/EarthQuake-Prediction",
       demo: "#",
       featured: true,
     },
@@ -31,19 +31,39 @@ const Projects = () => {
       description:
         "A comprehensive gym management solution for member registration, subscription tracking, attendance management, and payment processing. Features an intuitive dashboard for gym owners.",
       technologies: ["Java", "Spring Boot", "MySQL"],
-      github: "#",
+      github: "https://github.com/Praveen007-m/Gym-Management-SGA-Website-",
       demo: "#",
       featured: true,
     },
     {
-      title: "Online Reservation System",
+      title: "FarmOS",
       description:
-        "A Java-based booking platform enabling users to make and manage reservations with easy cancellation features. Designed for scalability and reliability.",
-      technologies: ["Java", "JDBC", "MySQL", "Swing UI"],
-      github: "#",
+        "A web-based farm management platform deployed on Netlify that enables agricultural planning, crop tracking, and asset management. Built as a custom deployment tailored for automated farm data handling and operational efficiency.",
+      technologies: ["React", "Netlify", "Farm Management"],
+      github: "https://github.com/Praveen007-m/FarmOS", // replace with your repo
+      demo: "https://farm-os.netlify.app",
+      featured: false,
+    },
+    {
+      title: "GoTravels",
+      description:
+        "A travel booking web application that allows users to explore destinations, view packages, and make travel reservations. Designed with a responsive UI and focused on smooth user experience.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/Praveen007-m/GoTravels",
       demo: "#",
       featured: false,
     },
+    {
+      title: "DivineFiesta",
+      description:
+        "A frontend event booking website designed for browsing events, viewing details, and booking event slots. Built using HTML, CSS, and JavaScript with a strong focus on responsive design, clean UI, and smooth user interactions.",
+      technologies: ["HTML", "CSS", "JavaScript"],
+      github: "https://github.com/Praveen007-m/DivineFiesta",
+      demo: "#",
+      featured: false,
+    },
+    
+
   ];
 
   return (
@@ -55,7 +75,7 @@ const Projects = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm mb-4 block">03. Projects</span>
+          <span className="text-primary font-mono text-sm mb-4 block">Projects</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Things I've Built</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>
@@ -102,13 +122,13 @@ const Projects = () => {
                     >
                       <Github className="h-5 w-5" />
                     </a>
-                    <a
+                    {/* <a
                       href={project.demo}
                       className="text-muted-foreground hover:text-primary transition-colors"
                       aria-label="View live demo"
                     >
                       <ExternalLink className="h-5 w-5" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
               </div>
@@ -142,12 +162,12 @@ const Projects = () => {
                     >
                       <Github className="h-5 w-5" />
                     </a>
-                    <a
+                    {/* <a
                       href={project.demo}
                       className="text-muted-foreground hover:text-primary transition-colors"
                     >
                       <ExternalLink className="h-5 w-5" />
-                    </a>
+                    </a> */}
                   </div>
                 </div>
                 <h4 className="text-lg font-semibold mb-3 group-hover:text-primary transition-colors">

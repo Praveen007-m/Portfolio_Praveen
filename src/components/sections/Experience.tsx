@@ -9,25 +9,25 @@ const Experience = () => {
 
   const experiences = [
     {
+      company: "RAS Software Solutions",
+      position: "Web Development Intern",
+      duration: "Sept 2024 - Mar 2025",
+      description: [
+        "Built travel and event booking websites with dynamic user interfaces",
+        "Developed booking management features with calendar integration",
+        "Created responsive layouts optimized for all device sizes",
+        "Worked with modern frontend technologies",
+      ],
+    },
+    {
       company: "WebAAC Solutions",
       position: "Web Development Intern",
-      duration: "2024",
+      duration: "Oct 2025 - Present",
       description: [
         "Developed and maintained web applications using modern technologies",
         "Collaborated with the team on full-stack development projects",
         "Implemented responsive UI designs and API integrations",
         "Gained hands-on experience with React and Node.js",
-      ],
-    },
-    {
-      company: "RAS Software Solutions",
-      position: "Web Development Intern",
-      duration: "2024",
-      description: [
-        "Built travel and event booking websites with dynamic user interfaces",
-        "Developed booking management features with calendar integration",
-        "Created responsive layouts optimized for all device sizes",
-        "Worked with modern frontend technologies and REST APIs",
       ],
     },
   ];
@@ -41,7 +41,7 @@ const Experience = () => {
           transition={{ duration: 0.6 }}
           className="text-center mb-16"
         >
-          <span className="text-primary font-mono text-sm mb-4 block">04. Experience</span>
+          <span className="text-primary font-mono text-sm mb-4 block">Experience</span>
           <h2 className="text-3xl md:text-4xl font-bold mb-4">Where I've Worked</h2>
           <div className="w-20 h-1 bg-primary mx-auto rounded-full" />
         </motion.div>

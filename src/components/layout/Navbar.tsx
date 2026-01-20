@@ -73,9 +73,17 @@ const Navbar = () => {
               animate={{ opacity: 1, y: 0 }}
               transition={{ duration: 0.3, delay: 0.6 }}
             >
-              <Button variant="outline" size="sm">
-                Resume
-              </Button>
+              <a
+                href="/resume/Praveen_Kumar_Software_Developer_Resume.pdf"
+                download
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                <Button variant="outline" size="sm">
+                  Resume
+                </Button>
+              </a>
+
             </motion.div>
           </div>
 
@@ -118,9 +126,18 @@ const Navbar = () => {
                     {item.label}
                   </motion.button>
                 ))}
-                <Button variant="outline" className="mt-4">
-                  Resume
-                </Button>
+                <a
+                  href="/resume/Praveen_Kumar_Software_Developer_Resume.pdf"
+                  download
+                  target="_blank"
+                  rel="noopener noreferrer"
+                  onClick={() => setIsMobileMenuOpen(false)}
+                >
+                  <Button variant="outline" className="mt-4 w-full">
+                    Resume
+                  </Button>
+                </a>
+
               </div>
             </div>
           </motion.div>
