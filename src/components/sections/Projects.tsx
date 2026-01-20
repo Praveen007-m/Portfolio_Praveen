@@ -12,7 +12,7 @@ const Projects = () => {
       title: "Hotel POS System",
       description:
         "A comprehensive Point of Sale system for hotels featuring billing management, GST calculation, role-based access control, and automated invoice PDF generation. Built with a focus on efficiency and user experience.",
-      technologies: ["Java", "Spring Boot", "MySQL", "REST API"],
+      technologies: ["React", "Node.js", "SQLite"],
       github: "#",
       demo: "#",
       featured: true,
@@ -27,10 +27,10 @@ const Projects = () => {
       featured: true,
     },
     {
-      title: "Brain Tumor Detection System",
+      title: "Gym Management System",
       description:
-        "A deep learning application using CNN models to detect and classify brain tumors from MRI scans. Deployed with Django for seamless web-based access and diagnosis assistance.",
-      technologies: ["Python", "CNN", "TensorFlow", "Django"],
+        "A comprehensive gym management solution for member registration, subscription tracking, attendance management, and payment processing. Features an intuitive dashboard for gym owners.",
+      technologies: ["Java", "Spring Boot", "MySQL"],
       github: "#",
       demo: "#",
       featured: true,

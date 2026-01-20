@@ -65,7 +65,6 @@ const Navbar = () => {
                 onClick={() => scrollToSection(item.href)}
                 className="text-muted-foreground hover:text-primary transition-colors duration-300 text-sm font-medium"
               >
-                <span className="text-primary font-mono text-xs mr-1">0{index + 1}.</span>
                 {item.label}
               </motion.button>
             ))}
@@ -116,7 +115,6 @@ const Navbar = () => {
                     onClick={() => scrollToSection(item.href)}
                     className="text-foreground hover:text-primary transition-colors text-left text-lg font-medium"
                   >
-                    <span className="text-primary font-mono text-sm mr-2">0{index + 1}.</span>
                     {item.label}
                   </motion.button>
                 ))}
