@@ -6,6 +6,8 @@ import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
 import { useToast } from "@/hooks/use-toast";
+import emailjs from "@emailjs/browser";
+
 
 const Contact = () => {
   const ref = useRef(null);
@@ -40,17 +42,38 @@ const Contact = () => {
     return Object.keys(newErrors).length === 0;
   };
 
-  const handleSubmit = (e: React.FormEvent) => {
+  const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
-    
-    if (validateForm()) {
+
+    if (!validateForm()) return;
+
+    try {
+      await emailjs.send(
+        "service_zyk0uw8",      // 🔴 YOUR SERVICE ID
+        "template_15qp0mn",     // 🔴 YOUR TEMPLATE ID
+        {
+          name: formData.name,
+          email: formData.email,
+          message: formData.message,
+        },
+        "CA0aSNPkCgpoDSaVs"        // 🔴 YOUR PUBLIC KEY
+      );
+
       toast({
         title: "Message Sent!",
         description: "Thank you for reaching out. I'll get back to you soon!",
       });
+
       setFormData({ name: "", email: "", message: "" });
+    } catch (error) {
+      toast({
+        title: "Failed to send message",
+        description: "Something went wrong. Please try again later.",
+        variant: "destructive",
+      });
     }
   };
+
 
   const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
     const { name, value } = e.target;
@@ -64,19 +87,19 @@ const Contact = () => {
     {
       icon: Mail,
       label: "Email",
-      value: "praveenkumar@email.com",
-      href: "mailto:praveensk3737@gmail.com",
+      value: "praveensk3737@gmail.com",
+       href: "https://mail.google.com/mail/?view=cm&fs=1&to=praveensk3737@gmail.com&su=Portfolio%20Contact&body=Hi%20Praveen,%0A%0AI%20visited%20your%20portfolio...",
     },
     {
       icon: Github,
       label: "GitHub",
-      value: "github.com/praveenkumar",
+      value: "https://github.com/Praveen007-m",
       href: "https://github.com/Praveen007-m",
     },
     {
       icon: Linkedin,
       label: "LinkedIn",
-      value: "linkedin.com/in/praveenkumar",
+      value: "https://www.linkedin.com/in/praveen-kumar-s-25704b259/",
       href: "https://www.linkedin.com/in/praveen-kumar-s-25704b259/",
     },
   ];

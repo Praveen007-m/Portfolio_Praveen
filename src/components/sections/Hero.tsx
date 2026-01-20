@@ -108,12 +108,15 @@ const Hero = () => {
             <Linkedin className="h-6 w-6" />
           </a>
           <a
-            href="mailto:praveensk3737@gmail.com"
+            href="https://mail.google.com/mail/?view=cm&fs=1&to=praveensk3737@gmail.com"
+            target="_blank"
+            rel="noopener noreferrer"
             className="text-muted-foreground hover:text-primary transition-colors duration-300 hover:scale-110"
             aria-label="Email"
           >
             <Mail className="h-6 w-6" />
           </a>
+
         </motion.div>
       </div>
 
