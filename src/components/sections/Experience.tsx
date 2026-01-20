@@ -9,14 +9,14 @@ const Experience = () => {
 
   const experiences = [
     {
-      company: "Oasis Infobyte",
-      position: "Java & Web Development Intern",
+      company: "WebAAC Solutions",
+      position: "Web Development Intern",
       duration: "2024",
       description: [
-        "Developed and maintained Java-based web applications using industry-standard practices",
-        "Collaborated with senior developers on full-stack development projects",
-        "Implemented responsive UI designs and RESTful API integrations",
-        "Gained hands-on experience with Spring Boot framework and MySQL databases",
+        "Developed and maintained web applications using modern technologies",
+        "Collaborated with the team on full-stack development projects",
+        "Implemented responsive UI designs and API integrations",
+        "Gained hands-on experience with React and Node.js",
       ],
     },
     {
