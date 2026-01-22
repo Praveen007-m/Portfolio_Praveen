@@ -74,7 +74,7 @@ const Navbar = () => {
               transition={{ duration: 0.3, delay: 0.6 }}
             >
               <a
-                href="/resume/Praveen_Kumar_Software_Developer_Resume.pdf"
+                href="/resume/Praveen_Resume.pdf"
                 download
                 target="_blank"
                 rel="noopener noreferrer"
